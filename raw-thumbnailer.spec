@@ -1,11 +1,11 @@
 Summary:	Thumbnail generator for raw images
 Name:		raw-thumbnailer
-Version:	0.2
-Release:	%mkrel 4
+Version:	0.99.1
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphics
-Url:		http://code.google.com/p/raw-thumbnailer/
-Source0:	http://code.google.com/p/raw-thumbnailer/downloads/%{name}-%{version}.tar.bz2
+Url:		http://libopenraw.freedesktop.org/wiki/RawThumbnailer
+Source0:	http://libopenraw.freedesktop.org/download/%{name}-%{version}.tar.bz2
 BuildRequires:	libopenraw-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
@@ -33,6 +33,14 @@ Usage: raw-thumbnailer -i input_file -o output_file -s size
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
+%post
+%post_install_gconf_schemas %{name}
+
+%preun
+%preun_uninstall_gconf_schemas %{name}
+
 %files
 %defattr(-,root,root)
 %{_bindir}/%{name}
+%{_sysconfdir}/gconf/schemas/raw-thumbnailer.schemas
+%{_datadir}/mime/packages/raw-thumbnailer.xml
