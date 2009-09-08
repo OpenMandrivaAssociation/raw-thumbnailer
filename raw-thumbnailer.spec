@@ -7,6 +7,7 @@ Group:		Graphics
 Url:		http://libopenraw.freedesktop.org/wiki/RawThumbnailer
 Source0:	http://libopenraw.freedesktop.org/download/%{name}-%{version}.tar.bz2
 BuildRequires:	libopenraw-devel
+BuildRequires:	gnome-vfs2-devel libgsf-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
