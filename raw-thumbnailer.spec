@@ -23,7 +23,7 @@ Usage: raw-thumbnailer -i input_file -o output_file -s size
 %setup -q
 
 %build
-%configure2_5x
+%configure2_5x --disable-schemas-install
 
 %make
 
