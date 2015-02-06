@@ -1,7 +1,7 @@
 Summary:	Thumbnail generator for raw images
 Name:		raw-thumbnailer
 Version:	3.0.0
-Release:	3
+Release:	4
 License:	GPLv2+
 Group:		Graphics
 Url:		http://libopenraw.freedesktop.org/wiki/RawThumbnailer
