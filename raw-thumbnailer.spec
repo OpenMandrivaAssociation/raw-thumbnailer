@@ -4,7 +4,7 @@ Version:	3.0.0
 Release:	4
 License:	GPLv2+
 Group:		Graphics
-Url:		http://libopenraw.freedesktop.org/wiki/RawThumbnailer
+Url:		https://libopenraw.freedesktop.org/wiki/RawThumbnailer
 Source0:	http://libopenraw.freedesktop.org/download/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(libopenraw-gnome-1.0)
 BuildRequires:	intltool
