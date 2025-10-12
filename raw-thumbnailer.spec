@@ -23,7 +23,7 @@ formats as libopenraw.This thumbnailer is designed to be small,
 lightweight and fast.
 
 %prep
-%autosetup -n gnome-%{name} -a1 -p1
+%autosetup -n gnome-%{name}-%{version} -a1 -p1
 %cargo_prep -v vendor
 
 cat >>Cargo.toml <<EOF
