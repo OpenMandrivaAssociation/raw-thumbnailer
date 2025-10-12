@@ -8,6 +8,7 @@ Url:		https://libopenraw.freedesktop.org/wiki/RawThumbnailer
 Source0:	https://gitlab.gnome.org/World/gnome-raw-thumbnailer/-/archive/%{version}/gnome-raw-thumbnailer-%{version}.tar.bz2
 Source1:  vendor.tar.xz
 BuildRequires:  cargo
+BuildRequires:  git
 BuildRequires:  rust-packaging
 BuildRequires:  intltool
 BuildRequires:  meson
